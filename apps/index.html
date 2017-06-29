@@ -9,7 +9,8 @@
         <!--        insert fonts here           -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
-
+		
+		<script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body class="whole">
@@ -25,9 +26,7 @@
 						<div id="logo"><a href="index.html"><img src="images/SquiggsNet_Logo.png"></a></div>
 						<nav class="head">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="https://apps.squiggs.net">Apps By SquiggsNet</a></li>
-								<li class="last"><a href="about.html">About Me</a></li>
+								<li class="last"><a href="http://portfolio.scottrafael.com/">ScottRafael.com</a></li>
 							 </ul>
 						</nav>
 					</div>
@@ -36,22 +35,106 @@
 		
 			<section class="content">
 				<div class="whole">
-					<article class="third-x2">
-						<h1>Scott Rafael</h1>
-						<p>Web Designer and Developer based out of Atlantic Canada with a strong passion for web application development.</p>
-					</article>
-					<img id="home_image" class="third last" src="images/left_traced.png" alt="Personal Pic">
+					<h1>APPS</h1>
+					<h2>by: SquiggsNet</h2>
+
+					<div class="app_screenshot">
+						<img class="ss html5 angular1 jquery bootstrap api asp mysql mvc vcs ionic cordova" src="images/nscc_course_map_app.jpg" alt="NSCC Course Map App Screenshot">
+							<div class="app_text whole">
+								<h1>NSCC Course Map App</h1>
+								<form action="http://scottrafaelnscccoursemap.azurewebsites.net">
+									<button type="submit">App</button>
+								</form>
+								<form action="#">
+									<button type="submit">Code</button>
+								</form>
+								<form action="course_map.html">
+									<button type="submit">About</button>
+								</form>
+							</div>
+					</div>
+
+					<div class="app_screenshot">
+						<img class="ss html5 css3 jquery bootstrap ruby sqlite mvc" src="images/project_management_app.jpg" alt="Project Management App Screenshot">
+							<div class="app_text whole">
+								<h1>Project Management App</h1>
+								<form action="http://spm.squiggs.net">
+									<button type="submit">App</button>
+								</form>
+								<form action="#">
+									<button type="submit">Code</button>
+								</form>
+								<form action="project_manager.html">
+									<button type="submit">About</button>
+								</form>
+							</div>
+					</div>
+
+					<div class="app_screenshot">
+						<img class="ss html5 css3 jquery vcs" src="images/portfolio_app.jpg" alt="Portfolio Screenshot">
+							<div class="app_text whole">
+								<h1>Portfolio - Scott Rafael</h1>
+								<form action="http://portfolio.scottrafael.com">
+									<button type="submit">App</button>
+								</form>
+								<form action="https://github.com/SquiggsNet/Portfolio">
+									<button type="submit">Code</button>
+								</form>
+								<form action="portfolio.html">
+									<button type="submit">About</button>
+								</form>
+							</div>
+					</div>
+
+					<div class="app_screenshot no_marg">
+						<img class="ss html5 ember jquery bootstrap nosql vcs" src="images/ember_test_app.jpg" alt="Ember Test App Screenshot">
+							<div class="app_text whole">
+								<h1>Concept Test App</h1>
+								<form action="http://test.squiggs.net/">
+									<button type="submit">App</button>
+								</form>							
+								<form action="https://github.com/SquiggsNet/testApp">	
+									<button type="submit">Code</button>
+								</form>
+								<form action="ember_test.html">
+									<button type="submit">About</button>
+								</form>
+							</div>
+					</div>
+
+					<div>
+						<h3>Filter:</h3>
+						<ul id="filter">
+							<li id="html5">HTML5</li>
+							<li id="css3">CSS3</li>
+							<li id="angular1">ANGULAR1</li>
+							<li id="react">REACT</li>
+							<li id="ember">EMBER</li>
+							<li id="jquery">JQUERY</li>
+							<li id="javascript">JAVASCRIPT</li>
+							<li id="bootstrap">BOOTSTRAP</li>
+							<li id="laravel">LARAVEL</li>
+							<li id="ajax">AJAX</li>
+							<li id="api">API</li>
+							<li id="php">PHP</li>
+							<li id="rubyrails">RUBY ON RAILS</li>
+							<li id="asp">ASP.NET</li>
+							<li id="mysql">MYSQL</li>
+							<li id="sqlite">SQLITE</li>
+							<li id="nosql">NOSQL</li>
+							<li id="mvc">MVC</li>
+							<li id="vcs">VCS</li>
+							<li id="ionic">IONIC</li>
+							<li id="cordova">CORDOVA</li>
+						</ul>
+					</div>
 				</div>
-				<div class="third-x2" id="buttons">
-					<form action="https://apps.squiggs.net">
-						<button type="submit" class="half">Apps By SquigsNet</button>
-					</form>
-					<form action="about.html">
-						<button type="submit" class="half last">About</button>
+				<div id="buttons">
+					<form action="http://portfolio.scottrafael.com/">
+						<button type="submit" class="whole">ScottRafael.com</button>
 					</form>
 				</div>
 			</section>
-			<div class="push"></div>
 		</div>
 		<footer>
 			<div  class="content">
@@ -72,6 +155,7 @@
 					</ul>
 				</nav>
 			</div>
-		</footer>			
+		</footer>
+		<script src="js/scripts.js"></script>			
     </body>
 </html>

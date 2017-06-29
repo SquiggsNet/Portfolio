@@ -90,24 +90,147 @@ nav.head li.icon {display: none;}
 
 h1 {
 	text-align: center;
-	font-size: 70px;
-	padding-top: 150px;
-    padding-left: 15px;
-    padding-right: 10px;
+	font-size: 60px;
 	color: rgb(85,252,249);
+	margin-top: 5px;
 	margin-bottom: 0px;
 }
 
-.about h1{
-	padding-top: 0px;
+h2{
+	text-align: center;
+	font-size: 45px;
+	color: rgb(85,252,249);
+	margin-top: -10px;
+	margin-bottom: 10px;
 }
 
-.about h2{
-	margin-top: 0px;
-	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-left: 15px;
+h3 {
+	font-size: 25px;
 }
+
+#buttons {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+button{
+	background-color: transparent;
+    transition: all .5s;
+	color: rgb(159,75,255);
+	height: 80px;
+	border: solid rgb(159,75,255) 3px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-left: 25%;
+}
+
+button:hover{
+	color: rgba(0,0,0,0.9);
+	background-color: rgb(159,75,255);
+}
+
+.app_screenshot {
+	position: relative;
+	background-color: rgb(0,0,0);
+	width: 24%;
+	padding: 3px;
+	margin: 0;
+	margin-right: 0.5%;
+	float: left;
+}
+
+.app_screenshot h1 {
+	margin: -12% 20px 15% 20px;
+	text-align: left;
+	font-size: 13px;
+}
+
+.app_screenshot button{
+	width: 50%;
+	height: 50px;
+	background-color: rgb(17,17,17);
+}
+
+.app_screenshot button:hover{
+	color: rgba(0,0,0,0.9);
+	background-color: rgb(159,75,255);
+}
+
+.ss {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.app_text {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	font-size: 20px;
+}
+
+.app_screenshot:hover .ss {
+	opacity: 0.3;
+}
+
+.app_screenshot:hover .app_text {
+	opacity: 1;
+}
+
+#filter {
+	margin: auto;
+	margin-top: -45px;
+	margin-bottom: 50px;
+    width: 64%;
+    padding: 10px;
+	font-size: 14px;
+	line-height: 15px;
+	color: rgb(85,252,249);
+}
+
+#filter li {
+   	display: inline-block;
+   	list-style: none;
+   	padding: 7px;
+	transition: all .5s;
+	border: solid rgb(85,252,249) 3px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 8px;
+}
+
+#filter li:hover {
+	color: rgba(0,0,0,0.9);
+	background-color: rgb(85,252,249);
+}
+
+/*#filter li a{
+	color: rgb(159,75,255);
+	transition: all .5s;
+	text-decoration: none;
+}*/
+
+/*#filter li a:hover{
+	color: rgba(0,0,0,0.9);
+	background-color: rgb(159,75,255);
+	padding-top: 28px;
+	padding-bottom: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+}*/
+
+/*.app_screenshot {
+	width: 300px;
+	height: 300px;
+}*/
 
 .about p{
 	margin-top: 0;
@@ -144,24 +267,6 @@ h1 {
 
 .about #buttons {
 	margin-top: -100px;	
-}
-
-#buttons {
-	margin-top: -150px;	
-}
-
-button{
-	background-color: transparent;
-    transition: all .5s;
-	color: rgb(159,75,255);
-	height: 80px;
-	border: solid rgb(159,75,255) 3px;
-	border-radius: 5px;
-}
-
-button:hover{
-	color: rgba(0,0,0,0.9);
-	background-color: rgb(159,75,255);
 }
 
 footer{
@@ -248,3 +353,7 @@ footer nav ul li {
 .instagram{background-position: -6.5px -7px;}
 .instagram:hover{background-position: -6.5px -41px;}
 .instagram:active{background-position: -6.5px -41px;}
+
+.no_marg {
+	margin: 0px;
+}
