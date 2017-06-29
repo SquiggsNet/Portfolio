@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
 
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body class="whole">
@@ -38,16 +39,31 @@
 				<div class="whole">
 					<article class="third-x2">
 						<h1>Scott Rafael</h1>
-						<p>Web Designer and Developer based out of Atlantic Canada with a strong passion for web application development.</p>
+						<div id="intro">
+							<p>Web Designer and Developer based out of Atlantic Canada with a strong passion for web application development.</p>
+						</div>
+						<div id="apps">
+							<p>Apps.Squiggs.Net provides access to apps That I have created or contributed to, to demonstrate my understanding of different web technologies.</p>
+						</div>
+						<div id="about">
+							<p>Learn more about me: </p>
+							<ul>
+								<li>My approach to coding</li>
+								<li>The origins of SquiggsNet</li>
+								<li>Skills and Resume</li>
+								<li>Interests</li>
+							</ul>
+							
+						</div>
 					</article>
 					<img id="home_image" class="third last" src="images/left_traced.png" alt="Personal Pic">
 				</div>
 				<div class="third-x2" id="buttons">
 					<form action="http://apps.squiggs.net">
-						<button type="submit" class="half">Apps By SquigsNet</button>
+						<button type="submit" class="half" id="app_btn">Apps By SquiggsNet</button>
 					</form>
 					<form action="about.html">
-						<button type="submit" class="half last">About</button>
+						<button type="submit" class="half last" id="about_btn">About</button>
 					</form>
 				</div>
 			</section>
@@ -71,6 +87,7 @@
 					</ul>
 				</nav>
 			</div>
-		</footer>			
+		</footer>
+		<script src="js/scripts.js"></script>			
     </body>
 </html>
