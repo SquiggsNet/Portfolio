@@ -26,7 +26,7 @@
 						<nav class="head">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="https://apps.squiggs.net">Apps By SquiggsNet</a></li>
+								<li><a href="http://apps.squiggs.net">Apps By SquiggsNet</a></li>
 								<li class="last"><a href="about.html">About Me</a></li>
 							 </ul>
 						</nav>
@@ -38,22 +38,61 @@
 				<div class="whole">
 					<div class="third-x2">
 						<h1>About Me</h1>
-						<div class="about_info" id="a_coding">
-							<h2>My Approach to coding</h2>
-							<p>The concept of the wheel not needing to be reinvented cannot be truer when it comes to coding. Languages and libraries have grown to the point where developers can use a more of a "plug in the features you want" kind of approach which has provided more of an opportunity to improve on the UX and the UI. Because of this on my road to becoming a Full Stack developer I created Apps.Squiggs.Net which contains different app concepts that have peaked my curiosity and provided me with a means to practice my skill in different frameworks and to build my library to have as a reference while building new cleaner more efficient apps.</p>
-						</div>
-						<div class="about_info" id="a_squiggsnet">
-							<h2>Origins of SquiggsNet</h2>
-							<p>The term SquiggsNet has been a work in progress for almost 15 years now. Starting back as Squiggy or Squiggs being a nickname for me and adopted as my gamer tag or username. It later evolved into SquiggsNet when I used an old PC jammed full of hard drives as a central server/media center for myself and my housemates at the time, a network by Squiggs. Shortly after SquiggsNet took on a whole new meaning representing anything that is a byproduct of something I had a part in. Now we welcome Apps.Squiggs.Net as a family of apps used in my progression forward in learning to become a FullStack developer. Long live SquiggsNet!</p>
-						</div>
-						<div class="about_info" id="a_skills">
-							<h2>Skills and Resume</h2>
-							<p>Web Development: HTML5, CSS3, JavaScript, Jquery, Bootstrap, Laravel, erb, development of wireframes and MockupsFront End: Angular1, AJAX, consumig an APIBack End: PHP, Ruby on Rails, ASP.NET Developing an APIDatabase: Access, Oracle, MySQL Server, NoSQL, SQLiteMobile: Android Studio, Ionic FramworkConcepts: OOP, MVC, RESTful architectureVersion Control: Git</p>
-						</div>
-						<div class="about_info" id="a_interests">
-							<h2>interests</h2>
-							<p>Rock Climbing (Bouldering)BakingSnowboardingLongboardingPhotography/ VideographyVideo Games</p>
-						</div>
+							<!--https://codyhouse.co/gem/horizontal-timeline/-->
+						<section class="cd-horizontal-timeline">
+
+							<div class="events-content">
+								<ul>
+									<li class="selected" data-date="01/01/2014">
+										<h2>My Approach to coding</h2>
+										<p>	
+											The concept of the wheel not needing to be reinvented cannot be truer when it comes to coding. Languages and libraries have grown to the point where developers can use a more of a "plug in the features you want" kind of approach which has provided more of an opportunity to improve on the UX and the UI. Because of this on my road to becoming a Full Stack developer I created Apps.Squiggs.Net which contains different app concepts that have peaked my curiosity and provided me with a means to practice my skill in different frameworks and to build my library to have as a reference while building new cleaner more efficient apps.
+										</p>
+									</li>
+
+									<li data-date="01/02/2014">
+										<h2>Origins of SquiggsNet</h2>
+										<p>	
+											The term SquiggsNet has been a work in progress for almost 15 years now. Starting back as Squiggy or Squiggs being a nickname for me and adopted as my gamer tag or username. It later evolved into SquiggsNet when I used an old PC jammed full of hard drives as a central server/media center for myself and my housemates at the time, a network by Squiggs. Shortly after SquiggsNet took on a whole new meaning representing anything that is a byproduct of something I had a part in. Now we welcome Apps.Squiggs.Net as a family of apps used in my progression forward in learning to become a FullStack developer. Long live SquiggsNet!	
+										</p>
+									</li>
+
+									<li data-date="01/03/2014">
+										<h2>Skills and Resume</h2>
+										<p>	
+											Web Development: HTML5, CSS3, JavaScript, Jquery, Bootstrap, Laravel, erb, development of wireframes and MockupsFront End: Angular1, AJAX, consumig an APIBack End: PHP, Ruby on Rails, ASP.NET Developing an APIDatabase: Access, Oracle, MySQL Server, NoSQL, SQLiteMobile: Android Studio, Ionic FramworkConcepts: OOP, MVC, RESTful architectureVersion Control: Git
+										</p>
+									</li>
+
+									<li data-date="01/04/2014">
+										<h2>Interests</h2>
+										<p>	
+											Rock Climbing (Bouldering)BakingSnowboardingLongboardingPhotography/ VideographyVideo Games.
+										</p>
+									</li>
+								</ul>
+							</div> <!-- .events-content -->
+
+							<div class="timeline">
+								<div class="events-wrapper">
+									<div class="events">
+										<ul>
+											<li><a href="#0" data-date="01/01/2014" class="selected">Coding</a></li>
+											<li><a href="#0" data-date="01/02/2014">SquiggsNet</a></li>
+											<li><a href="#0" data-date="01/03/2014">Skills</a></li>
+											<li><a href="#0" data-date="01/04/2014">Interests</a></li>
+										</ul>
+
+										<span class="filling-line" aria-hidden="true"></span>
+									</div> <!-- .events -->
+								</div> <!-- .events-wrapper -->
+									
+								<ul class="cd-timeline-navigation">
+									<li><a href="#0" class="prev inactive">Prev</a></li>
+									<li><a href="#0" class="next">Next</a></li>
+								</ul> <!-- .cd-timeline-navigation -->
+							</div> <!-- .timeline -->
+						</section>
 
 					</div>
 
@@ -63,7 +102,7 @@
 					<form action="index.html">
 						<button type="submit" class="half">Home</button>
 					</form>
-					<form action="https://apps.squiggs.net">
+					<form action="http://apps.squiggs.net">
 						<button type="submit" class="half last">Apps By SquiggsNet</button>
 					</form>
 				</div>
@@ -88,6 +127,9 @@
 					</ul>
 				</nav>
 			</div>
-		</footer>			
+		</footer>
+		<script src="js/vendor/jquery-2.1.4.js"></script>
+		<script src="js/vendor/jquery.mobile.custom.min.js"></script>
+		<script src="js/scripts.js"></script>			
     </body>
 </html>
