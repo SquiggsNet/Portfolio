@@ -32,6 +32,11 @@ body {
 	line-height: 1.75;
 	font-size:30px;
     color: rgb(26,241,113);
+  font-family: 'Rationale', sans-serif;
+}
+
+.by_SN{
+  font-family: 'Lobster', cursive;
 }
 
 .wrapper {
