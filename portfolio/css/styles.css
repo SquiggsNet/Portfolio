@@ -667,3 +667,28 @@ Main Components
     transform: translateX(0%);
   }
 }
+
+@media screen and (max-width: 1450px) {
+  #logo img{
+    width: 60px;
+  } 
+
+  #topNav{
+    height: 60px;
+  }
+
+  nav.head ul li {
+	  font-size: 20px;
+   	padding-right: 50px;	
+   	padding-top:26px;
+  }
+
+  nav.head ul li a:hover{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
