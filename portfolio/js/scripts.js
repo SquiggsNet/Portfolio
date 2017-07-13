@@ -27,6 +27,12 @@ $(document).ready(function() {
         }
     );
 
+// https://codepen.io/wuxifinger/pen/grjkBZ
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".loader").fadeOut(1000);
+		$("body").show(1000);
+	});
 
     var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 150;
