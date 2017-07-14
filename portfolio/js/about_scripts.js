@@ -132,7 +132,9 @@ $(document).ready(function() {
 		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
 		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
 		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 0.3;
+				console.log(timelineComponents['eventsMinLapse']);
 		    timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm*min+'px');
+			
 		}
 	}
 

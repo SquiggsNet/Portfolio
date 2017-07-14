@@ -29,7 +29,7 @@ body {
   position: relative;
   margin: 0;
   min-height: 100%;
-  min-width: 360px;
+  min-width: 405px;
 	background: url(../images/bg_one.jpg);
   background-size: 2296px 1532px;
   background-repeat: no-repeat;
@@ -475,7 +475,7 @@ RESPONSIVE DESIGNS
     margin-bottom: 50px;
   }
 
-  #home_content{
+  #main_content{
     width: 100%;
     position: relative;
     top: -10px;
@@ -494,11 +494,11 @@ RESPONSIVE DESIGNS
    	padding-right: 15px;	
   }
 
-   #home_content{
+   #main_content{
     top: -10px;
    }
 
-  #app_btn, #about_btn{
+  .primary_btn{
     width: 100%;
   }
 
@@ -510,5 +510,3 @@ RESPONSIVE DESIGNS
     margin: 115px 0 110px 0;
   }
 }
-
-  
