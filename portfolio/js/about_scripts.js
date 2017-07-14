@@ -1,38 +1,4 @@
 $(document).ready(function() {
-    $("#apps").hide();
-    $("#about").hide();
-
-
-    $("#app_btn").hover(
-        function(){
-            $("#intro").fadeOut(0, function(){
-                $("#apps").fadeIn(0);
-            });
-        }, function () {
-            $("#apps").fadeOut(0, function(){
-                $("#intro").fadeIn(0);
-            });
-        }
-    );
-
-    $("#about_btn").hover(
-        function(){
-            $("#intro").fadeOut(0, function(){
-                $("#about").fadeIn(0);
-            });
-        }, function () {
-            $("#about").fadeOut(0, function(){
-                $("#intro").fadeIn(0);
-            });
-        }
-    );
-
-// https://codepen.io/wuxifinger/pen/grjkBZ
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".loader").fadeOut(1000);
-		$("body").show(1000);
-	});
 
     var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 150;
