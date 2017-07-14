@@ -19,6 +19,13 @@ h2{
 	padding: 0 20px 20px 20px; 
 }
 
+#mobile_notice{
+  margin-top: -20px;
+  display: none;
+  text-align: center;
+  font-size:12px;
+}
+
 /* -------------------------------- 
 
 Main Components 
@@ -577,6 +584,12 @@ RESPONSIVE DESIGNS
   }
 }
 
+@media screen and (max-width: 1100px) {
+  #mobile_notice{
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1000px) {
 
   h1{
@@ -628,6 +641,10 @@ RESPONSIVE DESIGNS
    	padding-right: 15px;	
   }
 
+  #home_image{
+    width: 300px;
+  }
+
   .primary_btn{
     width: 100%;
   }
@@ -646,5 +663,25 @@ RESPONSIVE DESIGNS
 
   #buttons {
     margin: 315px 0 110px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  nav.head ul li {
+   	padding-right: 10px;	
+  }
+
+  nav.head ul li a:hover{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  h1{
+    margin: 15px 0 -10px 0;
+  }
+
+  .cd-horizontal-timeline .events-content{
+    margin-bottom: -10px;
   }
 }

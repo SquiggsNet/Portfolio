@@ -29,7 +29,7 @@ body {
   position: relative;
   margin: 0;
   min-height: 100%;
-  min-width: 405px;
+  min-width: 360px;
 	background: url(../images/bg_one.jpg);
   background-size: 2296px 1532px;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ footer nav ul li {
   width: 250px;
   height: 250px;
   position: relative;
-  margin: 250px auto;
+  margin: 200px auto;
 }
 .loader .logo {
   width: 45%;
@@ -491,7 +491,16 @@ RESPONSIVE DESIGNS
 @media screen and (max-width: 600px) {
 
   nav.head ul li {
-   	padding-right: 15px;	
+   	padding-right: 10px;	
+  }
+
+  nav.head ul li a:hover{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+   #home_image{
+    width: 300px;
   }
 
    #main_content{
