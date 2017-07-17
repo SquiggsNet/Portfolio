@@ -668,11 +668,23 @@ RESPONSIVE DESIGNS
 
 @media screen and (max-width: 450px) {
 
+ #logo img{
+    width: 40px;
+  } 
+
+  #topNav{
+    height: 40px;
+  }
+
   nav.head ul li {
-   	padding-right: 10px;	
+	  font-size: 15px;
+   	padding-right: 8px;		
+   	padding-top:20px;
   }
 
   nav.head ul li a:hover{
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 2px;
     padding-right: 2px;
   }

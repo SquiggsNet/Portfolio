@@ -1,3 +1,8 @@
+.chk_400{
+  display: none;
+  background-color: #FFF;
+}
+
 .whole, .half, .third, .third-x2, .quarter, .quarter-x3, .sixth, .twelveth{ 
 	float:left;
 	padding:0;
@@ -29,7 +34,7 @@ body {
   position: relative;
   margin: 0;
   min-height: 100%;
-  min-width: 360px;
+  min-width: 320px;
 	background: url(../images/bg_one.jpg);
   background-size: 2296px 1532px;
   background-repeat: no-repeat;
@@ -83,7 +88,7 @@ footer{
 
 nav.head{
     margin-top: -44px;
-	text-align: right;
+	  text-align: right;
 }
 
 nav.head ul li {
@@ -149,7 +154,7 @@ h1 {
 
 button{
 	background-color: transparent;
-    transition: all .5s;
+  transition: all .5s;
 	color: rgb(159,75,255);
 	height: 80px;
 	border: solid rgb(159,75,255) 3px;
@@ -490,11 +495,23 @@ RESPONSIVE DESIGNS
 
 @media screen and (max-width: 600px) {
 
+  #logo img{
+    width: 40px;
+  } 
+
+  #topNav{
+    height: 40px;
+  }
+
   nav.head ul li {
-   	padding-right: 10px;	
+	  font-size: 14px;
+   	padding-right: 8px;		
+   	padding-top:21px;
   }
 
   nav.head ul li a:hover{
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 2px;
     padding-right: 2px;
   }
@@ -517,5 +534,11 @@ RESPONSIVE DESIGNS
 
   #buttons {
     margin: 115px 0 110px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .chk_400{
+    background-color: #000;
   }
 }
