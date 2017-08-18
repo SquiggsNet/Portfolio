@@ -49,11 +49,13 @@ body {
 .main{
 	float: left;
 	width: 78%;
+	transition: all .5s;
 }
 
 .sidebar{
 	float: right;
 	width: 20%;
+	transition: all .5s;
 }
 
 *,
@@ -124,10 +126,6 @@ nav.head ul li a:hover{
 
 nav.head li.icon {display: none;}
 
-.mobile{
-    display: none;
-  }
-
 h1 {
 	text-align: center;
 	font-size: 80px;
@@ -153,7 +151,7 @@ h3 {
 }
 
 .disclaimer {
-	margin: 50px 0 0 0;
+	margin: 100px 0 0 0;
 	font-size: 14px;
 	transition: all .5s;
 }
@@ -236,7 +234,7 @@ button:hover{
 	margin-top: -25px;
 	/*margin-bottom: 50px;*/
     width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 0;
 	font-size: 12px;
 	line-height: 15px;
 	color: rgb(85,252,249);
@@ -259,8 +257,26 @@ button:hover{
 }
 
 #clear_filter{
-	margin-top: 20px;
+	text-align: center;
+	width: 100%;
 }
+
+.title{
+	margin: 0;
+}
+
+.description{
+	padding-bottom: 30px;
+}
+
+.app_info a{
+	background-color: rgb(26,241,113);
+}
+
+.mobile{
+		margin: 0;
+    display: none;
+  }
 
 footer{
 	background-color: rgba(0,0,0,0.8);
@@ -442,6 +458,14 @@ RESPONSIVE DESIGNS
 	  width: 90%;
   }
 
+	.main{
+		width: 73%;
+	}
+
+	.sidebar{
+		width: 25%;
+	}
+
   #logo img{
     width: 60px;
   } 
@@ -508,8 +532,17 @@ RESPONSIVE DESIGNS
 		padding-right: 10px;
 	}
 
+	.main{
+		width: 68%;
+	}
+
+	.sidebar{
+		width: 30%;
+	}
+
 	.app_screenshot {
 		padding: 4px;
+		width: 25%;
 	}
 
 	.app_screenshot h1 {
@@ -550,20 +583,26 @@ RESPONSIVE DESIGNS
 }
 
 @media screen and (max-width: 1100px) {
-  .mobile{
-    display: block;
-  }
-
-  .desktop{
-	  display: none;
-  }
+  
 }
 
 @media screen and (max-width: 1000px) {
 
+	.main{
+	width: 58%;
+}
+
+.sidebar{
+	width: 40%;
+}
+
   h1{
     font-size: 40px;
   }
+
+	h3 {
+		margin: 50px 0 40px 0;
+	}
 
   p{
     font-size: 18px;
@@ -623,9 +662,41 @@ RESPONSIVE DESIGNS
     position: relative;
     margin: 200px 0 110px 0;
   }*/
+
+	.main{
+		width: 53%;
+	}
+
+	.sidebar{
+		width: 45%;
+	}
+
+	.app_screenshot {
+		width: 50%;
+	}
+
+	#buttons{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 600px) {
+
+	.mobile{
+    display: block;
+  }
+
+	.main{
+		width: 100%;
+	}
+
+	.sidebar{
+		width: 100%;
+	}
+
+	.app_screenshot {
+		width: 33.3%;
+	}
 
   nav.head ul li {
    	padding-right: 10px;	
@@ -635,6 +706,18 @@ RESPONSIVE DESIGNS
     padding-left: 2px;
     padding-right: 2px;
   }
+
+	h3{
+		margin: 0;
+	}
+
+	#filter{
+		margin: 0;
+	}
+
+	.disclaimer{
+		margin-top:10px;
+	}
 
    #home_image{
     width: 300px;
@@ -653,6 +736,6 @@ RESPONSIVE DESIGNS
   }
 
   #buttons {
-    margin: 115px 0 110px 0;
+    margin: 30px 0 110px 0;
   }
 }
